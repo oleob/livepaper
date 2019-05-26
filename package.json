@@ -20,9 +20,7 @@
     "helmet": "^3.12.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  },
-  "devDependencies": {
+    "react-dom": "^16.8.6",
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.4.5",
     "@babel/node": "^7.0.0",
@@ -38,7 +36,9 @@
     "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
-    "@babel/runtime": "^7.4.5",
+    "@babel/runtime": "^7.4.5"
+  },
+  "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
