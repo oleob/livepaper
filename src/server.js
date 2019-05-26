@@ -36,6 +36,8 @@ app.use("/", express.static(path.join(__dirname, "static")));
 
 app.use(errorHandler);
 
-app.listen(7777, () => {
-  console.log("Server running on port 7777");
+const port = process.env.PORT;
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
