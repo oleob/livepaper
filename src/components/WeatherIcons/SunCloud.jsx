@@ -17,8 +17,8 @@ const SunCloud = ({ x, y, scale, flip }) => (
         <circle
           fill="#F06543"
           stroke="#F29E4C"
-          stroke-width="4"
-          stroke-miterlimit="10"
+          strokeWidth="4"
+          strokeMiterlimit="10"
           cx="36.6"
           cy="35.6"
           r="23.7"
