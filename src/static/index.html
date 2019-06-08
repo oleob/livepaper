@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sample Site</title>
-</head>
-<body>
-    <h1>Hello there</h1>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Livepaper</title>
+  </head>
+  <body>
+    <h1>Welcome to livepaper</h1>
+    <p>Currently there are 3 available endpoints:</p>
+    <h3>/api/sky-island</h3>
+    <p>
+      Generates an SVG with the sky island and the current weather. It takes the
+      following parameters:
+    </p>
+    <ul>
+      <li><b>height:</b> height of the svg</li>
+      <li><b>width:</b> width of the svg</li>
+      <li><b>City:</b> City from which the weather-data will be retrieved</li>
+    </ul>
+    <p>Example url:</p>
+    <a href="/api/sky-island?height=1000&width=1000&city=Oslo"
+      >/api/sky-island?height=1000&width=1000&city=Oslo</a
+    >
+    <h3>/api/custom-weather</h3>
+    <p>
+      Generates an SVG with the sky island and a custon weather icon. It takes
+      the followinbg parameters:
+    </p>
+    <ul>
+      <li><b>height:</b> height of the svg</li>
+      <li><b>width:</b> width of the svg</li>
+      <li>
+        <b>weatherIcon: </b> Code which controles which icon is displayed. For
+        available codes see
+        <a href="https://openweathermap.org/weather-conditions">This link.</a>
+      </li>
+    </ul>
+    <p>Example url:</p>
+    <a href="/api/custom-weather?height=1000&width=1000&weatherIcon=01d"
+      >/api/custom-weather?height=1000&width=1000&weatherIcon=01d
+    </a>
+    <h3>/api/waterbottle</h3>
+    <p>
+      Generates an SVG with a waterbottle which displays a given power-level. It
+      takes the following parameters:
+    </p>
+    <ul>
+      <li><b>height:</b> height of the svg</li>
+      <li><b>width:</b> width of the svg</li>
+      <li><b>batteryLevel:</b> A number from 0 to 100</li>
+    </ul>
+    <p>Example url:</p>
+    <a href="/api/waterbottle?height=1000&width=1000&batteryLevel=43"
+      >/api/waterbottle?height=1000&width=1000&batteryLevel=43
+    </a>
+  </body>
 </html>
