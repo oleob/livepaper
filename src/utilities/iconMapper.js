@@ -10,7 +10,6 @@ import SunRainCloud from "../components/WeatherIcons/SunRainCloud";
 const iconMapper = iconCode => {
   switch (iconCode) {
     case "01d":
-      console.log("hmmmm")
       return Sun;
     case "01n":
       return Moon;
