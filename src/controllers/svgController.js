@@ -11,9 +11,9 @@ import weatherService from "../services/weatherService";
 
 const svgController = {
   skyIsland: async (req, res, next) => {
-    const width = req.query.width;
-    const height = req.query.height;
-    const city = req.query.city;
+    const width = req.query.width || "1000";
+    const height = req.query.height || "1000";
+    const city = req.query.city || 'Oslo';
     const currentWeather = await weatherService.getCurrentWeather(city, next);
     const Icon = iconMapper(currentWeather.weather[0].icon);
 
@@ -26,9 +26,9 @@ const svgController = {
     res.send(markup);
   },
   customWeather: async (req, res) => {
-    const width = req.query.width;
-    const height = req.query.height;
-    const weatherIcon = req.query.weatherIcon;
+    const width = req.query.width || "1000";
+    const height = req.query.height || "1000";
+    const weatherIcon = req.query.weatherIcon || '01d';
 
     const Icon = iconMapper(weatherIcon);
 
@@ -41,9 +41,9 @@ const svgController = {
     res.send(markup);
   },
   waterBottle: (req, res) => {
-    const width = req.query.width;
-    const height = req.query.height;
-    const batteryLevel = req.query.batteryLevel;
+    const width = req.query.width || "1000";
+    const height = req.query.height || "1000";
+    const batteryLevel = req.query.batteryLevel || "43";
 
     const markup = renderToStaticMarkup(
       <Template width={width} height={height}>
