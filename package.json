@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "body-parser": "^1.17.2",
     "cors": "^2.8.4",
     "env-cmd": "^9.0.1",
