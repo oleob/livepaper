@@ -16,7 +16,7 @@
     "body-parser": "^1.17.2",
     "cors": "^2.8.4",
     "env-cmd": "^9.0.1",
-    "express": "^4.15.3",
+    "express": "^4.17.3",
     "flat-cache": "^2.0.1",
     "helmet": "^3.12.1",
     "prop-types": "^15.7.2",
